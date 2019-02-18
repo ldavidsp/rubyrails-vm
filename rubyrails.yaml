@@ -1,0 +1,16 @@
+memory: 2048
+cpus: 1
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: "#{__dir__}/"
+        to: /home/vagrant/code
+sites:
+    -
+        map: zoneg-api.app
+        to: /home/vagrant/code/public
+
+name: rubyrails-vm
+hostname: rubyrails-vm
